@@ -14,10 +14,11 @@ class EmailParser
 
 
   def parse
-    new = []
     binding.pry
+    emails.join
     EmailParser.new(emails)
-    new << emails.split(","||" ")
+    emails.split(" ")
+    emails.split("\,")
     new.each do |x|
       x.strip
     end
