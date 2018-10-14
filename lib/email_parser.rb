@@ -17,7 +17,7 @@ class EmailParser
     new = []
     EmailParser.new(emails)
     emails.split(" ")
-    emails.split("\,")
+    email = emails.split("\,")
     emails.each do |x|
       new << x.strip
     end
