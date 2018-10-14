@@ -14,7 +14,6 @@ class EmailParser
 
 
   def parse
-    binding.pry
     emails.join
     EmailParser.new(emails)
     emails.split(" ")
@@ -22,6 +21,7 @@ class EmailParser
     emails.each do |x|
       new << x.strip
     end
+    binding.pry
 
     return new
 
