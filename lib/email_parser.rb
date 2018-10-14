@@ -15,7 +15,6 @@ class EmailParser
 
   def parse
     new = []
-    emails.join
     EmailParser.new(emails)
     emails.split(" ")
     emails.split("\,")
