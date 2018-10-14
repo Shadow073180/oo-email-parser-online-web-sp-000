@@ -15,6 +15,7 @@ class EmailParser
 
   def parse
     new = []
+    binding.pry
     EmailParser.new(emails)
     new << emails.split(","||" ")
     new.each do |x|
