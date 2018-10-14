@@ -16,7 +16,7 @@ class EmailParser
   def parse
     new = []
     EmailParser.new(emails)
-    emails.match?(/\S*.com/)
+    new << emails.scan(/\S*.com/)
 
   end
 end
