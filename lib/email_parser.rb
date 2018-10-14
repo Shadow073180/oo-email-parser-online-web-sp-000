@@ -16,7 +16,7 @@ class EmailParser
   def parse
     new = []
     EmailParser.new(emails)
-    emails.split(/\S*.com/)
+    emails.split.match?(/\S*.com/)
 
   end
 end
