@@ -17,6 +17,11 @@ class EmailParser
     new = []
     EmailParser.new(emails)
     new << emails.split(","||" ")
+    new.each do |x|
+      x.strip
+    end
+
+    return new
 
   end
 end
