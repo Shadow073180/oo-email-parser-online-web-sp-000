@@ -16,14 +16,7 @@ class EmailParser
   def parse
     new = []
     EmailParser.new(emails)
-    emails.split(" ")
-    email = emails.split("\,")
-    email.collect do |x|
-      new << x.strip
-    end
-    binding.pry
-
-    return new
+    emails.split(/\S*.com/)
 
   end
 end
