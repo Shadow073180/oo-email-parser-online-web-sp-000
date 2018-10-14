@@ -18,7 +18,6 @@ class EmailParser
     EmailParser.new(emails)
     emails.split(","||" ")
 
-    end
 
     return new
 
