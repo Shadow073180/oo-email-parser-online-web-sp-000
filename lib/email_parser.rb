@@ -16,10 +16,7 @@ class EmailParser
   def parse
     new = []
     EmailParser.new(emails)
-    emails.split(","||" ")
-
-
-    return new
+    emails = emails.split(","||" ")
 
   end
 end
